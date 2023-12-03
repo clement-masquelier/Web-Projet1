@@ -1,9 +1,16 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat : no-repeat;
+}
 nav > div {
-    float : right;
-    display : grid;
-    grid-template-columns : repeat(4,100px) auto;
-    grid-template-rows : 100px;
-    grid-template-areas : "logo connexion menu reservation localisation questions"
+    font-size: 22px;
+    font-weight: bold;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    grid-template-columns: auto repeat(4,220px);
+    grid-template-rows: 100px;
+    grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
 #logo {
@@ -11,7 +18,8 @@ nav > div {
     height: 100px;
     border-radius: 7%;
     border: 1px solid black;
-    position: relative;
+    float: left;
+    position: static;
     top: 10px;
     left: 10px;
 }
@@ -28,8 +36,30 @@ nav > div {
 
 #connect {
     grid-area : connexion;
+    justify-self : left;
+    background-color: orange;
 }
 
 #menu  {
     grid-area : menu;
+    background-color: yellow;
+}
+
+#reservation {
+    grid-area : reservation;
+    background-color: orange;
+}
+
+#localisation {
+    grid-area : localisation;
+    background-color: yellow;
+}
+
+#questions {
+    grid-area : questions;
+    background-color: orange;
+}
+
+h1 {
+    clear: both;
 }
