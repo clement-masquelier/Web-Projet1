@@ -10,9 +10,6 @@ nav {
 }
 
 #logo:active {
-    
-}
-#logo:active {
     width: 100px;
     height: 100px;
     border-radius: 7%;
@@ -20,4 +17,8 @@ nav {
     position: relative;
     top: 10px;
     left: 10px;
+}
+
+#connect {
+    grid-area : connexion;
 }
