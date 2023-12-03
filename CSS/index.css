@@ -1,0 +1,25 @@
+#id {
+color: red;
+    background-color: blue;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    box-shadow: 2px 2px 2px black;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
