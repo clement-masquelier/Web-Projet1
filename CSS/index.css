@@ -23,3 +23,15 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 7%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    transition: 0.5s;
+}
