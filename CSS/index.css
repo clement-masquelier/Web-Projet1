@@ -1,12 +1,14 @@
-nav {
+nav > div {
     display : grid;
-    grid-template-columns : repeat(5,10px) auto;
+    grid-template-columns : repeat(4,10px) auto;
     grid-template-rows : 10px;
     grid-template-areas : "logo connexion menu reservation localisation questions"
 }
 
 #logo {
-    grid-area : logo;
+    position : relative;
+    left : 10px;
+    top : 10px;
 }
 
 #logo:active {
