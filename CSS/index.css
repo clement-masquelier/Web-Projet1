@@ -5,7 +5,9 @@ nav > div {
     grid-template-areas : "logo connexion menu reservation localisation questions"
 }
 
-#logo {
+#logo { 
+    height : 100px;
+    width : 100px;
     position : relative;
     left : 10px;
     top : 10px;
