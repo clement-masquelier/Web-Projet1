@@ -1,7 +1,8 @@
 nav {
     display : grid;
-    grid-template-columns : ;
+    grid-template-columns : repeat(5,10px) auto;
     grid-template-rows : 10px;
+    grid-template-areas : "logo "
 }
 
 header > h1 {
