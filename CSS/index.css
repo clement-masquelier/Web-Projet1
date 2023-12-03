@@ -5,12 +5,15 @@ nav > div {
     grid-template-areas : "logo connexion menu reservation localisation questions"
 }
 
-#logo { 
-    height : 100px;
-    width : 100px;
-    position : relative;
-    left : 10px;
-    top : 10px;
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 7%;
+    border: 1px solid black;
+    box-shadow :inherit;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 #logo:active {
