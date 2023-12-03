@@ -1,7 +1,8 @@
 nav > div {
+    float : right;
     display : grid;
-    grid-template-columns : repeat(4,10px) auto;
-    grid-template-rows : 10px;
+    grid-template-columns : repeat(4,100px) auto;
+    grid-template-rows : 100px;
     grid-template-areas : "logo connexion menu reservation localisation questions"
 }
 
@@ -27,4 +28,8 @@ nav > div {
 
 #connect {
     grid-area : connexion;
+}
+
+#menu  {
+    grid-area : menu;
 }
