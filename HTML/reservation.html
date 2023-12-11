@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title> Localisation </title>
-    <link rel="stylesheet" type="text/css" href="../css/connect.css">
+    <title> Réserver </title>
+    <link rel="stylesheet" type="text/css" href="../css/reservation.css">
 </head>
 
 <body>
     <nav>
         <a href="../index.html">
-            <img id="logo" src="../images/logo.png" alt="Logo">
+            <img id="logo" src="../images/logo.png" alt="Page d'accueil'">
         </a>
         <div>
             <a id="connect" href="connect.html"> Se Connecter </a>
@@ -22,6 +22,58 @@
 
     <header>
     </header>
+
+    <form id="reserve">
+        <div class="fLine">
+            
+            <div id="nameC">
+                <label for="name">Nom* : </label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+            
+            <div id="phoneNumberC">
+                <label for="phoneNumber">N° de téléphone* :</label>
+                <input type="tel" id="phoneNumber" name="user_phone_number"/>
+            </div>
+        
+        </div>
+        
+        <div class="sLine">
+            
+            <div id="dateC">
+                <label for="date">Date et heure* : </label>
+                <input type="datetime-local" id="date" value="2023-12-11" min="2023-12-11" max="2024-12-31" name="reservation_date" />
+            </div>
+
+            <div id="nbPersonnesC">
+                <label for="nbPersonnes">Nombres de personnes* :</label>
+                <select id="nbpersonnes" name="nbPersonnes" required>
+                    <option value="" selected>--Choisissez le nombre de personnes --</option>
+                    <option value="option1">1</option>
+                    <option value="option2">2</option>
+                    <option value="option3">3</option>
+                    <option value="option4">4</option>
+                    <option value="option5">5</option>
+                    <option value="option6">6</option>
+                    <option value="option7">7</option>
+                    <option value="option8">8</option>
+                    <option value="option9">9</option>
+                    <option value="option10">10</option>
+                    <option value="option11">Plus de 10 (préciser dans 'demandes particulières')</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="lLine">
+            <label for="asks">Demandes particulières</label>
+            <textarea id="asks" rows="4" cols="40" name="asks"></textarea>
+        </div>
+
+        <input type="submit" id="submit" name="submit" value="Réserver" />
+
+    </form>
 
 </body>
 </html>

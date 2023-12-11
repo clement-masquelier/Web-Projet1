@@ -1,17 +1,21 @@
+header {
+    background-image: url("images/background.jpg");
+}
+
 nav > div {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     display: grid;
     justify-items: left;
     align-items: center;
     grid-template-columns: auto repeat(4,220px);
-    grid-template-rows: 100px;
+    grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     border-radius: 7%;
     border: 1px solid black;
     float: left;
@@ -54,4 +58,84 @@ nav > div {
 #questions {
     grid-area: questions;
     background-color: orange;
+}
+
+h1 {
+    clear: both;
+}
+
+
+
+#reseaux img {
+    width: 50px;
+    height: 50px;
+    border-radius: 7%;
+    float: left;
+}
+
+
+
+#reserve {
+    width: 95%;
+    background-color: aliceblue;
+    position: relative;
+    border-radius: 15px;
+    height: 500px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.fLine {
+    position: absolute;
+    top: 5%;
+    left:0%;
+    right:0%;
+}
+#nameC {
+    position: absolute;
+    left: 14.5%;
+}
+#phoneNumberC {
+    position: absolute;
+    right:25%;
+}
+
+
+.sLine{
+    position: absolute;
+    top: 20%;
+    left:0%;
+    right:0%;
+}
+
+#dateC {
+    position: absolute;
+    left: 10%;
+}
+
+#nbPersonnesC {
+    position: absolute;
+    right: 20%;
+}
+
+
+.lLine{
+    position: absolute;
+    top: 35%;
+    left:0%;
+    right:0%;
+    bottom: 5%;
+}
+.lLine label{
+    position:absolute;
+    left:10%;
+    top:7%;
+
+}
+#asks{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    top: 15%;
 }
