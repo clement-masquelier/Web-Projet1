@@ -2,19 +2,19 @@ header {
     background-image: url("images/background.jpg");
 }
 nav > div {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     display: grid;
     justify-items: left;
     align-items: center;
     grid-template-columns: auto repeat(4,220px);
-    grid-template-rows: 100px;
+    grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
 #logo {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     border-radius: 7%;
     border: 1px solid black;
     float: left;
