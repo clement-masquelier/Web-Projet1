@@ -24,7 +24,7 @@ nav > div {
     left: 10px;
 }
 
-    #logo:active {
+#logo:active {
         width: 100px;
         height: 100px;
         border-radius: 7%;
@@ -32,7 +32,7 @@ nav > div {
         position: relative;
         top: 10px;
         left: 10px;
-    }
+}
 
 #connect {
     grid-area: connexion;
@@ -88,24 +88,26 @@ h1 {
 .fLine {
     position: absolute;
     top: 5%;
-    left:0%;
-    right:0%;
+    left: 0%;
+    right: 0%;
 }
+
 #nameC {
     position: absolute;
     left: 14.5%;
 }
+
 #phoneNumberC {
     position: absolute;
-    right:25%;
+    right: 25%;
 }
 
 
-.sLine{
+.sLine {
     position: absolute;
     top: 20%;
-    left:0%;
-    right:0%;
+    left: 0%;
+    right: 0%;
 }
 
 #dateC {
@@ -119,20 +121,21 @@ h1 {
 }
 
 
-.lLine{
+.lLine {
     position: absolute;
     top: 35%;
-    left:0%;
-    right:0%;
+    left: 0%;
+    right: 0%;
     bottom: 5%;
 }
-.lLine label{
-    position:absolute;
-    left:10%;
-    top:7%;
 
+.lLine label {
+        position: absolute;
+        left: 10%;
+        top: 7%;
 }
-#asks{
+
+#asks {
     position: absolute;
     left: 10%;
     right: 10%;
