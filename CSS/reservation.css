@@ -139,3 +139,17 @@ h1 {
     bottom: 10%;
     top: 15%;
 }
+
+#submit {
+    position: absolute;
+    right:4%;
+    bottom:2%;
+    height: 5%;
+    width: 8%;
+    border-radius: 35px;
+    box-shadow: 1px -1px black;
+}
+
+#submit:active {
+    box-shadow: 0px;
+}
