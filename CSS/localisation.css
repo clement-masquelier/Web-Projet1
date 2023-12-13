@@ -74,14 +74,25 @@ h1 {
 }
 
 #loc{
-    width: 60%;
+    width: 40%;
     height: 400px;
     border: 1px solid black;
     margin: 0;
     padding: 0;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 }
 
-#texte {
+#texte .jsp {
     font-style : italic;
     font-size : 18px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+#text ul {
+    font-family: Arial;
+    position: absolute;
 }
