@@ -85,14 +85,17 @@ h1 {
 }
 
 #texte .jsp {
-    font-style : italic;
-    font-size : 18px;
+    font-family : Roman;
+    font-size : 20px;
     position: relative;
     left: 50px;
     top: 50px;
 }
 
-#text ul {
-    font-family: Arial;
+ul {
+    font-family: Verdana;
+    font-size: 15px;
     position: absolute;
+    top:180px;
+    left: 50px;
 }
