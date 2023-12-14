@@ -64,11 +64,137 @@ h1 {
     clear: both;
 }
 
-
-
 #reseaux img {
     width: 50px;
     height: 50px;
     border-radius: 7%;
     float: left;
+}
+
+#menu_box{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    /* couleur juste pour  voir la boite pendant dev */
+    background-color: aliceblue; 
+    /* couleur juste pour  voir la boite pendant dev */
+
+
+
+}
+#menu_box > h1{
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    left: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#pates {
+    grid-area: pates;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "titre"
+                            "contenu";
+}
+
+#sauces_garnitures {
+    grid-area: sauces;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "titre titre"
+                            "gauche gauche"
+                            "droite droite";
+}
+
+#boissons_extras {
+    grid-area: boissons;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "titre"
+                            "contenu";
+}
+
+
+
+
+#pates h2{
+    grid-area: titre;
+    margin: auto;
+}
+#pates ul{
+    grid-area: contenu;
+    top: 20%;
+    margin: auto;
+}
+
+#sauces_garnitures h2{
+    position: absolute;
+    grid-area: titre;
+    margin: auto;
+}
+
+#sauces_garnitures .gauche{
+    grid-area: gauche;
+}
+#sauces_garnitures .droite{
+    grid-area: droite;
+}
+
+
+#boissons_extras h2{
+    grid-area: titre;
+    margin: auto;
+}
+#boissons_extras ul{
+    grid-area: contenu;
+    top: 20%;
+    margin: auto;
+}
+
+
+
+#menu_box #mConteneur {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "pates pates pates"
+                            "sauces sauces sauces"
+                            "boissons boissons boissons";
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+
+@media only screen and (600px<=width){
+    
+    #menu_box #mConteneur {
+        grid-template-areas: "pates sauces sauces"
+                                "pates sauces sauces"
+                                "boissons boissons boissons";
+    }
+
+    #sauces_garnitures{
+        grid-template-areas: "titre titre"
+                                "gauche droite"
+                                "gauche droite";
+    }
+}
+
+@media only screen and (768px<=width){
+    #menu_box #mConteneur {
+        grid-template-areas: "pates sauces boissons"
+                                "pates sauces boissons"
+                                "pates sauces boissons";
+    }
+
+
 }
