@@ -73,6 +73,7 @@ h2 {
 .questions {
     font-family: 'Noto Sans';
     display: grid;
+    justify-items: left;
     grid-template-columns: 100%;
     grid-template-rows: repeat(11, 20%);
     grid-template-areas: "quest1"
