@@ -23,16 +23,6 @@ nav > div {
     left: 10px;
 }
 
-#logo:active {
-    width: 100px;
-    height: 100px;
-    border-radius: 7%;
-    border: 1px solid black;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-
 #connect {
     grid-area : connexion;
     justify-self : left;
@@ -68,13 +58,17 @@ h1 {
 #reseaux img{
 width: 50px;
 height: 50px;
-border-radius: 7%;
+border-radius: 40%;
 float: left;
 }
 
 #reseaux {
+    margin: 5%;
+    padding: 1%;
+    border: 2px solid black;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    justify-items: center;
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: 50px;
     grid-template-areas: "Facebook Twitter Instagram"
 }
@@ -82,11 +76,21 @@ float: left;
 .facebook {
     grid-area: Facebook;
 }
+.facebook:hover {
+    transform: scale(1.5,1.5) rotate(30deg);
+}
+
 
 .twitter {
     grid-area: Twitter;
 }
+.twitter:hover {
+    transform: scale(1.5,1.5) rotate(30deg); 
+}
 
 .instagram {
     grid-area: Instagram;
+}
+.instagram:hover {
+    transform: scale(2,2) rotate(30deg);
 }
