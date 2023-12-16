@@ -66,10 +66,48 @@ h1 {
 
 h2 {
     font-family: 'Noto Sans';
+    font-style: italic;
     font-weight: bold;
-    color: green;
 }
 
 .questions {
     font-family: 'Noto Sans';
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(11, 20%);
+    grid-template-areas: "quest1"
+                         "rep1"
+                         "."
+                         "quest2"
+                         "rep2"
+                         "."
+                         "quest3"
+                         "rep3"
+                         "."
+                         "quest4"
+                         "rep4";
+}
+.quest1 {
+    grid-area: quest1;
+}
+.rep1 {
+    grid-area: rep1;
+}
+.quest2 {
+    grid-area: quest2;
+}
+.rep2 {
+    grid-area: rep2;
+}
+.quest3 {
+    grid-area: quest3;
+}
+.rep3 {
+    grid-area: rep3;
+}
+.quest4 {
+    grid-area: quest4;
+}
+.rep4 {
+    grid-area: rep4;
 }
