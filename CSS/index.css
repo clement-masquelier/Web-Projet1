@@ -26,34 +26,23 @@ nav > div {
 #connect {
     grid-area : connexion;
     justify-self : left;
-    background-color: orange;
 }
 
 #menu  {
     grid-area : menu;
-    background-color: yellow;
 }
 
 #reservation {
     grid-area : reservation;
-    background-color: orange;
 }
 
 #localisation {
     grid-area : localisation;
-    background-color: yellow;
 }
 
 #questions {
     grid-area : questions;
-    background-color: orange;
 }
-
-h1 {
-    clear: both;
-}
-
-
 
 #reseaux img{
 width: 50px;

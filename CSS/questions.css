@@ -1,6 +1,6 @@
 nav > div {
     font-size: 18px;
-    font-weight: bold;
+    background-color: #ffbc0d;
     display: grid;
     justify-items: left;
     align-items: center;
@@ -20,54 +20,58 @@ nav > div {
     left: 10px;
 }
 
-    #logo:active {
-        width: 100px;
-        height: 100px;
-        border-radius: 7%;
-        border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 10px;
-    }
+body > div {
+    background-color: grey;
+}
 
 #connect {
     grid-area: connexion;
     justify-self: left;
+    color: #3C3B38;
+}
+#connect:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #menu {
     grid-area: menu;
+    color: #3C3B38;
+}
+#menu:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #reservation {
     grid-area: reservation;
+    color: #3C3B38;
+}
+#reservation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #localisation {
     grid-area: localisation;
+    color: #3C3B38;
+}
+#localisation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #questions {
     grid-area: questions;
+    color: #3C3B38;
+}
+#questions:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 h1 {
     clear: both;
-}
-
-
-
-#reseaux img {
-    width: 50px;
-    height: 50px;
-    border-radius: 7%;
-    float: left;
-}
-
-h2 {
-    font-family: 'Noto Sans';
-    font-style: italic;
-    font-weight: bold;
 }
 
 .questions {
