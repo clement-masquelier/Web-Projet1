@@ -204,12 +204,12 @@ h2{
         color:transparent;
     }
     to{
-        transform: translate(0px,px);
+        transform: translate(0px,0px);
     }
 }
 @keyframes hoveringOutQuestion{
     from{
-        transform: translate(0px,px);
+        transform: translate(0px,0px);
     }
     to{
         transform: translate(0px,-20px);
