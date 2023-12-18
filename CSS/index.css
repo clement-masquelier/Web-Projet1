@@ -232,13 +232,21 @@ nav > div {
     align-self: center;
     justify-self: center;
 }
+.rep {
+    color: transparent;
+    animation-name: open1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
 @keyframes open1 {
     from{
         width: 70%;
+        color: transparent;
     }
-    to{
-        width:250%;
+    to {
+        width: 250%;
+        color: #3C3B38;
     }
 }
 
