@@ -1,22 +1,31 @@
+/* Barre de navigation */
 nav > div {
     font-size: 18px;
     background-color: #ffbc0d;
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 5% repeat(5,auto);
-    grid-template-rows: 70px;
-    grid-template-areas: "logo connexion menu reservation localisation questions"
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 70px);
+    grid-template-areas: "logo"
+                        "connexion"
+                        "menu"
+                        "reservation"
+                        "localisation"
+                        "questions"
 }
 
 #logo {
     grid-area: logo;
+    display: block;
+    margin: auto;
+}
+#logo img{
     width: 50px;
     height: 50px;
     border-radius: 7%;
     border: 1px solid black;
 }
-
 #connect{
     grid-area: connexion;
     width:100%;
@@ -26,7 +35,7 @@ nav > div {
     text-align: center;
     line-height: 70px;
     animation-name: hoveringOutNav;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 #connect:hover{
     animation-name: hoveringNav;
@@ -34,6 +43,73 @@ nav > div {
     animation-fill-mode: forwards;
 }
 
+#menu{
+    grid-area:menu;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
+}
+#menu:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#reservation{
+    grid-area: reservation;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
+}
+#reservation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#localisation{
+    grid-area: localisation;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
+}
+#localisation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#questions{
+    grid-area: questions;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
+}
+#questions:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 @keyframes hoveringNav{
     from{
         background-color: #ffbc0d;
@@ -54,78 +130,8 @@ nav > div {
         background-color: #ffbc0d;
     }
 }
+/* Barre de navigation  */
 
-#menu{
-    grid-area:menu;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-    color: #3C3B38;
-    text-align: center;
-    line-height: 70px;
-}
-#menu:hover{
-    animation-name: hoveringNav;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-
-#reservation{
-    grid-area: reservation;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-    color: #3C3B38;
-    text-align: center;
-    line-height: 70px;
-}
-#reservation:hover{
-    animation-name: hoveringNav;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#localisation{
-    grid-area: localisation;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-    color: #3C3B38;
-    text-align: center;
-    line-height: 70px;
-}
-#localisation:hover{
-    animation-name: hoveringNav;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#questions{
-    grid-area: questions;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-    color: #3C3B38;
-    text-align: center;
-    line-height: 70px;
-}
-#questions:hover{
-    animation-name: hoveringNav;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-h1 {
-    clear: both;
-}
-
-#reseaux img {
-    width: 50px;
-    height: 50px;
-    border-radius: 7%;
-    float: left;
-}
 
 #menu_box{
     position: relative;
@@ -237,8 +243,11 @@ li{
     left: 5%;
 }
 
-
+/* Tablette */
 @media only screen and (600px<=width){
+    
+    
+    
     #sauces_garnitures .droite{
         border-left: solid black 1px;
     }
@@ -254,13 +263,26 @@ li{
                                 "gauche droite";
     }
 }
+/* Tablette */
 
+/* Ordnateur */
 @media only screen and (768px<=width){
+    
+    /* Barre de navigation */
+    nav > div{
+        grid-template-columns: 5% repeat(5,auto);
+        grid-template-rows: 70px;
+        grid-template-areas: "logo connexion menu reservation localisation questions"
+    }
+    /* Barre de navigation */
+
+    /* Grid menu */
     #menu_box #mConteneur {
         grid-template-areas: "pates sauces boissons"
                                 "pates sauces boissons"
                                 "pates sauces boissons";
     }
-
+    /* Grid menu */
 
 }
+/* Ordinateur */
