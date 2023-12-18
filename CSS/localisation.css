@@ -80,22 +80,22 @@ h1 {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    left: 3%;
+    bottom: 10%;
 }
 
-#texte .jsp {
+#texte > div {
     font-family : Roman;
     font-size : 20px;
-    position: relative;
-    left: 50px;
-    top: 50px;
+    position: absolute;
+    left: 10%;
+    top: 18%;
 }
 
 ul {
     font-family: Verdana;
     font-size: 15px;
     position: absolute;
-    top:180px;
-    left: 50px;
+    top:25%;
+    right: 20%;
 }
