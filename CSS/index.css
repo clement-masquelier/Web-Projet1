@@ -140,7 +140,7 @@ nav > div {
     margin: 50px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 20% auto;
     grid-template-areas: "question"
         "image";
 }
@@ -159,6 +159,36 @@ nav > div {
     height: 125px;
     width: 125px;
     grid-area: image;
+    align-self: center;
+    justify-self: center;
+}
+
+.soiree {
+    height: 400px;
+    width: 25%;
+    background-color: grey;
+    border-radius: 6%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% auto;
+    grid-template-areas: "questionUn"
+                         "imageUn";
+}
+.soiree:hover {
+    background-color: green;
+}
+.question2{
+    grid-area: questionUn;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 18px;
+    color: #3C3B38;
+}
+#fete{
+    transform: scale(0.2,0.2);
+    grid-area: imageUn;
     align-self: center;
     justify-self: center;
 }
