@@ -2,31 +2,26 @@ nav > div {
     font-size: 18px;
     background-color: #ffbc0d;
     display: grid;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: auto repeat(4,220px);
+    grid-template-columns: 5% repeat(5,auto);
     grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
+#logoA{
+    text-decoration: none;
+}
 #logo {
-    width: 65px;
-    height: 65px;
+    grid-area: logo;
+    width: 50px;
+    height: 50px;
     border-radius: 7%;
     border: 1px solid black;
-    float: left;
-    position: static;
-    top: 10px;
-    left: 10px;
-}
-
-body > div {
-    background-color: grey;
 }
 
 #connect {
     grid-area: connexion;
-    justify-self: left;
     color: #3C3B38;
 }
 #connect:hover {
@@ -78,8 +73,9 @@ h1 {
     font-family: 'Noto Sans';
     display: grid;
     justify-items: left;
+    background-color: grey;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(11, 20%);
+    grid-template-rows: repeat(11, 1fr);
     grid-template-areas: "quest1"
                          "rep1"
                          "."

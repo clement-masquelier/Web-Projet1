@@ -1,47 +1,70 @@
-header {
-    background-image: url("images/background.jpg");
-}
 nav > div {
     font-size: 18px;
-    font-weight: bold;
+    background-color: #ffbc0d;
     display: grid;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: auto repeat(4,220px);
+    grid-template-columns: 5% repeat(5,auto);
     grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
 #logo {
-    width: 65px;
-    height: 65px;
+    grid-area: logo;
+    width: 50px;
+    height: 50px;
     border-radius: 7%;
     border: 1px solid black;
-    float: left;
-    position: static;
-    top: 10px;
-    left: 10px;
 }
 
 #connect {
-    grid-area : connexion;
-    justify-self : left;
+    grid-area: connexion;
+    color: #3C3B38;
 }
 
-#menu  {
-    grid-area : menu;
+#connect:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
+}
+
+#menu {
+    grid-area: menu;
+    color: #3C3B38;
+}
+
+#menu:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #reservation {
-    grid-area : reservation;
+    grid-area: reservation;
+    color: #3C3B38;
+}
+
+#reservation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #localisation {
-    grid-area : localisation;
+    grid-area: localisation;
+    color: #3C3B38;
+}
+
+#localisation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #questions {
-    grid-area : questions;
+    grid-area: questions;
+    color: #3C3B38;
+}
+
+#questions:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #reseaux img{
@@ -52,10 +75,11 @@ float: left;
 }
 
 #reseaux {
-    margin: 5%;
+    margin: 2%;
     padding: 1%;
     border: 2px solid black;
     display: grid;
+    background-color:#ffbc0d ;
     justify-items: center;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 50px;
@@ -66,7 +90,7 @@ float: left;
     grid-area: Facebook;
 }
 .facebook:hover {
-    transform: scale(1.5,1.5) rotate(30deg);
+    transform: scale(1.5,1.5);
 }
 
 
@@ -74,12 +98,12 @@ float: left;
     grid-area: Twitter;
 }
 .twitter:hover {
-    transform: scale(1.5,1.5) rotate(30deg); 
+    transform: scale(1.5,1.5); 
 }
 
 .instagram {
     grid-area: Instagram;
 }
 .instagram:hover {
-    transform: scale(2,2) rotate(30deg);
+    transform: scale(1.5,1.5);
 }
