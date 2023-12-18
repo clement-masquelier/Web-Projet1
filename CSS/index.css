@@ -160,6 +160,11 @@ nav > div {
     animation-fill-mode: forwards;
     z-index: 2;
 }
+.horaires:hover ul {
+    animation-name: open1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 .question1 {
     grid-area: question;
     font-size: 25px;
@@ -174,6 +179,9 @@ nav > div {
     grid-area: image;
     align-self: center;
     justify-self: center;
+}
+.rep > ul {
+    color: transparent;
 }
 
 .soiree {
@@ -232,17 +240,11 @@ nav > div {
     align-self: center;
     justify-self: center;
 }
-.rep {
-    color: transparent;
-    animation-name: open1;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 
 @keyframes open1 {
     from{
         width: 70%;
-        color: transparent;
+        color:transparent;
     }
     to {
         width: 250%;
