@@ -1,73 +1,136 @@
+/* Barre de navigation */
 nav > div {
     font-size: 18px;
     background-color: #ffbc0d;
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 5% repeat(5,auto);
-    grid-template-rows: 70px;
-    grid-template-areas: "logo connexion menu reservation localisation questions"
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 70px);
+    grid-template-areas: "logo"
+                        "connexion"
+                        "menu"
+                        "reservation"
+                        "localisation"
+                        "questions"
 }
 
-#logoA{
-    text-decoration: none;
-}
 #logo {
     grid-area: logo;
+    display: block;
+    margin: auto;
+}
+#logo img{
     width: 50px;
     height: 50px;
     border-radius: 7%;
     border: 1px solid black;
 }
-
-#connect {
+#connect{
     grid-area: connexion;
+    width:100%;
+    height:100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
 }
-#connect:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+#connect:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#menu {
-    grid-area: menu;
+#menu{
+    grid-area:menu;
+    width:100%;
+    height:100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
 }
-#menu:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+#menu:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#reservation {
+#reservation{
     grid-area: reservation;
+    width:100%;
+    height:100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
 }
-#reservation:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+#reservation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#localisation {
+#localisation{
     grid-area: localisation;
+    width:100%;
+    height:100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
 }
-#localisation:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+#localisation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#questions {
+#questions{
     grid-area: questions;
+    width:100%;
+    height:100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 0.5s;
 }
-#questions:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+#questions:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-
-h1 {
-    clear: both;
+@keyframes hoveringNav{
+    from{
+        background-color: #ffbc0d;
+    }
+    to{
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
 }
+@keyframes hoveringOutNav{
+    from{
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+    to{
+        background-color: #ffbc0d;
+    }
+}
+/* Barre de navigation  */
 
 .questions {
     font-family: 'Noto Sans';
@@ -112,3 +175,19 @@ h1 {
 .rep4 {
     grid-area: rep4;
 }
+
+
+/* Ordnateur */
+@media only screen and (768px<=width){
+    
+    /* Barre de navigation */
+    nav > div{
+        grid-template-columns: 5% repeat(5,auto);
+        grid-template-rows: 70px;
+        grid-template-areas: "logo connexion menu reservation localisation questions"
+    }
+    /* Barre de navigation */
+
+
+}
+/* Ordinateur */
