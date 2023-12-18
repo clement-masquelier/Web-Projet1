@@ -109,6 +109,7 @@ float: left;
     margin: 2%;
     padding: 1%;
     border: 2px solid black;
+    border-radius: 6%;
     display: grid;
     background-color:#ffbc0d ;
     justify-items: center;

@@ -9,9 +9,6 @@ nav > div {
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
-#logoA{
-    text-decoration: none;
-}
 #logo {
     grid-area: logo;
     width: 50px;
@@ -22,48 +19,110 @@ nav > div {
 
 #connect {
     grid-area: connexion;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 1s;
 }
-#connect:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
+
+    #connect:hover {
+        animation-name: hoveringNav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes hoveringNav {
+    from {
+        background-color: #ffbc0d;
+    }
+
+    to {
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+}
+
+@keyframes hoveringOutNav {
+    from {
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+
+    to {
+        background-color: #ffbc0d;
+    }
 }
 
 #menu {
     grid-area: menu;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
 }
-#menu:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
-}
+
+    #menu:hover {
+        animation-name: hoveringNav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
 
 #reservation {
     grid-area: reservation;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
 }
-#reservation:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
-}
+
+    #reservation:hover {
+        animation-name: hoveringNav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
 
 #localisation {
     grid-area: localisation;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
 }
-#localisation:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
-}
+
+    #localisation:hover {
+        animation-name: hoveringNav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
 
 #questions {
     grid-area: questions;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
 }
-#questions:hover {
-    transform: scale(1.2,1.2);
-    font-weight: bold;
-}
+
+    #questions:hover {
+        animation-name: hoveringNav;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
 
 h1 {
     clear: both;
