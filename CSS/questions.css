@@ -1,74 +1,114 @@
-header {
-    background-image: url("images/background.jpg");
-}
-
 nav > div {
     font-size: 18px;
-    font-weight: bold;
+    background-color: #ffbc0d;
     display: grid;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: auto repeat(4,220px);
+    grid-template-columns: 5% repeat(5,auto);
     grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
+#logoA{
+    text-decoration: none;
+}
 #logo {
-    width: 65px;
-    height: 65px;
+    grid-area: logo;
+    width: 50px;
+    height: 50px;
     border-radius: 7%;
     border: 1px solid black;
-    float: left;
-    position: static;
-    top: 10px;
-    left: 10px;
 }
-
-    #logo:active {
-        width: 100px;
-        height: 100px;
-        border-radius: 7%;
-        border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 10px;
-    }
 
 #connect {
     grid-area: connexion;
-    justify-self: left;
-    background-color: orange;
+    color: #3C3B38;
+}
+#connect:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #menu {
     grid-area: menu;
-    background-color: yellow;
+    color: #3C3B38;
+}
+#menu:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #reservation {
     grid-area: reservation;
-    background-color: orange;
+    color: #3C3B38;
+}
+#reservation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #localisation {
     grid-area: localisation;
-    background-color: yellow;
+    color: #3C3B38;
+}
+#localisation:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 #questions {
     grid-area: questions;
-    background-color: orange;
+    color: #3C3B38;
+}
+#questions:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
 }
 
 h1 {
     clear: both;
 }
 
-
-
-#reseaux img {
-    width: 50px;
-    height: 50px;
-    border-radius: 7%;
-    float: left;
+.questions {
+    font-family: 'Noto Sans';
+    display: grid;
+    justify-items: left;
+    background-color: grey;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: "quest1"
+                         "rep1"
+                         "."
+                         "quest2"
+                         "rep2"
+                         "."
+                         "quest3"
+                         "rep3"
+                         "."
+                         "quest4"
+                         "rep4";
+}
+.quest1 {
+    grid-area: quest1;
+}
+.rep1 {
+    grid-area: rep1;
+}
+.quest2 {
+    grid-area: quest2;
+}
+.rep2 {
+    grid-area: rep2;
+}
+.quest3 {
+    grid-area: quest3;
+}
+.rep3 {
+    grid-area: rep3;
+}
+.quest4 {
+    grid-area: quest4;
+}
+.rep4 {
+    grid-area: rep4;
 }

@@ -1,74 +1,266 @@
-header {
-    background-image: url("images/background.jpg");
-}
-
 nav > div {
     font-size: 18px;
-    font-weight: bold;
+    background-color: #ffbc0d;
     display: grid;
-    justify-items: left;
+    justify-items: center;
     align-items: center;
-    grid-template-columns: auto repeat(4,220px);
+    grid-template-columns: 5% repeat(5,auto);
     grid-template-rows: 70px;
     grid-template-areas: "logo connexion menu reservation localisation questions"
 }
 
 #logo {
-    width: 65px;
-    height: 65px;
+    grid-area: logo;
+    width: 50px;
+    height: 50px;
     border-radius: 7%;
     border: 1px solid black;
-    float: left;
-    position: static;
-    top: 10px;
-    left: 10px;
 }
 
-    #logo:active {
-        width: 100px;
-        height: 100px;
-        border-radius: 7%;
-        border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 10px;
-    }
-
-#connect {
+#connect{
     grid-area: connexion;
-    justify-self: left;
-    background-color: orange;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+    animation-name: hoveringOutNav;
+    animation-duration: 1s;
+}
+#connect:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#menu {
-    grid-area: menu;
-    background-color: yellow;
+@keyframes hoveringNav{
+    from{
+        background-color: #ffbc0d;
+    }
+    to{
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+}
+@keyframes hoveringOutNav{
+    from{
+        background-color: #c99614;
+        font-weight: bold;
+        border-radius: 25px;
+    }
+    to{
+        background-color: #ffbc0d;
+    }
 }
 
-#reservation {
+#menu{
+    grid-area:menu;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+}
+#menu:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#reservation{
     grid-area: reservation;
-    background-color: orange;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+}
+#reservation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#localisation {
+#localisation{
     grid-area: localisation;
-    background-color: yellow;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+}
+#localisation:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#questions {
+#questions{
     grid-area: questions;
-    background-color: orange;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: #3C3B38;
+    text-align: center;
+    line-height: 70px;
+}
+#questions:hover{
+    animation-name: hoveringNav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 h1 {
     clear: both;
 }
 
-
-
 #reseaux img {
     width: 50px;
     height: 50px;
     border-radius: 7%;
     float: left;
+}
+
+#menu_box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+#menu_box > h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#mConteneur > div{
+    border: solid black 1px;
+    background-color: #EDF5B9;
+}
+
+#pates {
+    grid-area: pates;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "titre"
+                            "contenu";
+}
+
+#sauces_garnitures {
+    grid-area: sauces;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr 1fr;
+    grid-template-areas: "titre titre"
+                            "gauche gauche"
+                            "droite droite";
+}
+
+#boissons_extras {
+    grid-area: boissons;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "titre"
+                            "contenu";
+}
+
+
+.item{
+    width: 85%;
+    justify-self: left;
+}
+
+.prix{
+    justify-self: right;
+}
+.invisible{
+    color: transparent;
+}
+
+#pates h2{
+    grid-area: titre;
+    margin: auto;
+}
+#pates ul{
+    grid-area: contenu;
+    top: 20%;
+    line-height: 2.5;
+}
+li{
+    display: flex;
+}
+
+#sauces_garnitures h2{
+    position: absolute;
+    grid-area: titre;
+    justify-self: center;
+}
+
+#sauces_garnitures .gauche{
+    grid-area: gauche;
+    line-height: 2.5;
+}
+#sauces_garnitures .droite{
+    grid-area: droite;
+    line-height: 2.5;
+}
+
+
+#boissons_extras h2{
+    grid-area: titre;
+    margin: auto;
+}
+#boissons_extras ul{
+    grid-area: contenu;
+    top: 20%;
+    line-height: 2.5;
+}
+
+
+
+#menu_box #mConteneur {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "pates pates pates"
+                            "sauces sauces sauces"
+                            "boissons boissons boissons";
+    width: 90%;
+    top: 15%;
+    left: 5%;
+}
+
+
+@media only screen and (600px<=width){
+    #sauces_garnitures .droite{
+        border-left: solid black 1px;
+    }
+    #menu_box #mConteneur {
+        grid-template-areas: "pates sauces sauces"
+                                "pates sauces sauces"
+                                "boissons boissons boissons";
+    }
+
+    #sauces_garnitures{
+        grid-template-areas: "titre titre"
+                                "gauche droite"
+                                "gauche droite";
+    }
+}
+
+@media only screen and (768px<=width){
+    #menu_box #mConteneur {
+        grid-template-areas: "pates sauces boissons"
+                                "pates sauces boissons"
+                                "pates sauces boissons";
+    }
+
+
 }
