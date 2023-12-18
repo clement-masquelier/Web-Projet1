@@ -132,50 +132,108 @@ nav > div {
 }
 /* Barre de navigation  */
 
+/* Questions */
+h2{
+    grid-area: titre;
+    align-self: center;
+}
+
 .questions {
     font-family: 'Noto Sans';
     display: grid;
-    justify-items: left;
-    background-color: grey;
+    background-color: #EDF5B9;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(11, 1fr);
-    grid-template-areas: "quest1"
-                         "rep1"
-                         "."
-                         "quest2"
-                         "rep2"
-                         "."
-                         "quest3"
-                         "rep3"
-                         "."
-                         "quest4"
-                         "rep4";
-}
-.quest1 {
-    grid-area: quest1;
-}
-.rep1 {
-    grid-area: rep1;
-}
-.quest2 {
-    grid-area: quest2;
-}
-.rep2 {
-    grid-area: rep2;
-}
-.quest3 {
-    grid-area: quest3;
-}
-.rep3 {
-    grid-area: rep3;
-}
-.quest4 {
-    grid-area: quest4;
-}
-.rep4 {
-    grid-area: rep4;
+    grid-template-rows: 15% repeat(4, 1fr);
+    grid-template-areas: "titre"
+                        "q1"
+                        "q2"
+                        "q3"
+                        "q4";        
+    line-height: 2.5;
 }
 
+.reponse{
+    animation-name: hoveringOutQuestion;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.question{
+    font-weight: bold;
+}
+#quest1 {
+    grid-area: q1;
+}
+#quest1:hover > .reponse{
+    animation-name: hoveringQuestion;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#quest2 {
+    grid-area: q2;
+}
+#quest2:hover > .reponse{
+    animation-name: hoveringQuestion;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#quest3 {
+    grid-area: q3;
+}
+#quest3:hover > .reponse{
+    animation-name: hoveringQuestion;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#quest4 {
+    grid-area: q4;
+}
+#quest4:hover > .reponse{
+    animation-name: hoveringQuestion;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes hoveringQuestion{
+    from{
+        transform: translate(0px,-20px);
+        color:transparent;
+    }
+    to{
+        transform: translate(0px,px);
+    }
+}
+@keyframes hoveringOutQuestion{
+    from{
+        transform: translate(0px,px);
+    }
+    to{
+        transform: translate(0px,-20px);
+        color: transparent;
+    }
+}
+/* Questions */
+
+
+/* Tablette */
+@media only screen and (600px<=width){
+   /* Questions */
+    .questions{
+        grid-template-columns: 1fr 1fr;;
+        grid-template-rows: 15% 1fr 1fr;
+        grid-template-areas: "titre titre"
+                            "q1 q2"
+                            "q3 q4";
+        }
+    /* Questions */
+    
+}
+
+/* Tablette */
 
 /* Ordnateur */
 @media only screen and (768px<=width){
@@ -188,6 +246,7 @@ nav > div {
     }
     /* Barre de navigation */
 
+    
 
 }
 /* Ordinateur */

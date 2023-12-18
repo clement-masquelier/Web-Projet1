@@ -143,10 +143,11 @@ nav > div {
 
 #reserve {
     width: 95%;
-    background-color: aliceblue;
+    background-color: #EDF5B9;
     position: relative;
     border-radius: 15px;
     height: 500px;
+    margin-top: 1%;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
