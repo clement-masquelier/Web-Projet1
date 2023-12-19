@@ -185,12 +185,10 @@ legend {
     font-size: 18px;
     font-weight: bold;
 }
-label {
+.portrait > label {
     font-weight: bold;
-    width: 20%;
-}
-input[type=radio]{
-    width: 10%;
+    display: inline-block;
+    width: 30%;
 }
 input[type=text] {
     border: none;
