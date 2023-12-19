@@ -12,7 +12,7 @@
                 <a id="logo" href="../index.html">
                     <img src="../images/logo.png" alt="Logo">
                 </a>
-                   
+
                 <a id="connect" href="connect.html">
                     <div>
                         Se Connecter
@@ -42,8 +42,62 @@
         </nav>
 
         <header>
-            
         </header>
+        <main id="bulles">
+            <div>
+                <form class="infoPerso">
+                    <fieldset class="portrait">
+                        <!-- la balise fieldset peut être utilisé pour regrouper un ensemble de champs -->
+                        <legend>S'inscrire :</legend>
 
+                        <label>Genre:</label>
+                        <input type="radio" name="genre" id="mme">
+                        <!-- "name" doit avoir la même valeur pour UN ENSEMBLE d'input de type radio -->
+                        <label for="mme">Madame</label>
+                        <input type="radio" name="genre" id="mr">
+                        <!-- la valeur de l'attribut "for" de la balise label et le "id" de la balise de l'input associé doit être la même -->
+                        <label for="mr">Monsieur</label>
+
+                        <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
+
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                        <br><br>
+
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+                        <br><br>
+
+                        <label for="courriel">Adresse mail : </label>
+                        <input type="email" name="adresse mail" id="mail" placeholder="Votre adresse mail">
+                        <br><br>
+
+                        <label for="mdp">Veuillez entrer votre mot de passe : </label>
+                        <input type="text" name="mdp" id="mdp1" placeholder="Votre mot de passe">
+                        <br><br>
+
+                        <label for="mdp">Veuillez confirmer votre mot de passe : </label>
+                        <input type="text" name="mdp confirm" id="mdp2" placeholder="Votre mot de passe">
+                        <br><br>
+                    </fieldset>
+                </form>
+                <form class="connect">
+                    <fieldset class="connection">
+                        <legend>Se connecter :</legend>
+                        <label for="identifiant">Identifiant :</label>
+                        <input type="text" name="id" id="identifiant" placeholder="Votre adresse mail">
+                        <br><br>
+
+                        <label for="mdp3">Mot de passe :</label>
+                        <input type="text" name="mdp4" id="mdp5" placeholder="Votre mot de passe">
+                        <br><br>
+
+
+                        <input type="submit" name="Envoi" id="bouton" value="Connection">
+
+                    </fieldset>
+                </form>
+            </div>
+        </main>
     </body>
 </html>
