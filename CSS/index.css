@@ -173,20 +173,20 @@ body{
 
 .horairesHoverer:hover .horaires{
     animation-name: opening;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     z-index: 2;
 }
 .horairesHoverer:hover .front{
     animation-name: openFront;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 .horairesHoverer:hover .back{
     animation-name: openBack;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     transform: rotate3d(0, 1, 0, -180deg);
@@ -237,7 +237,7 @@ body{
 
 .soireeHoverer:hover .soiree{
     animation-name: opening;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     z-index:2;
@@ -246,14 +246,14 @@ body{
 
 .soireeHoverer:hover .front{
     animation-name: openFront;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
 }
 .soireeHoverer:hover .back{
     animation-name: openBack;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     transform: rotate3d(0, 1, 0, -180deg);
