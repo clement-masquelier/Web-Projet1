@@ -48,14 +48,14 @@
                 <form class="infoPerso">
                     <fieldset class="portrait">
                         <!-- la balise fieldset peut être utilisé pour regrouper un ensemble de champs -->
-                        <legend>S'inscrire :</legend>
+                        <legend>S'inscrire</legend>
 
                         <label>Genre:</label>
                         <!-- "name" doit avoir la même valeur pour UN ENSEMBLE d'input de type radio -->
                         <input type="radio" name="genre" id="mme">
                         <label for="mme">Madame</label>
                         <!-- la valeur de l'attribut "for" de la balise label et le "id" de la balise de l'input associé doit être la même -->
-                        <input type="radio" name="genre" id="mr">
+                        <input type="radio" name="genre" required id="mr">
                         <label for="mr">Monsieur</label>
                         <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
 
@@ -84,7 +84,7 @@
                 </form>
                 <form class="connect">
                     <fieldset class="connection">
-                        <legend>Se connecter :</legend>
+                        <legend>Se connecter</legend>
                         <label for="identifiant">Identifiant :</label>
                         <input type="text" name="id" id="identifiant" placeholder="Votre adresse mail" required>
                         <br><br>
