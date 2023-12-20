@@ -60,39 +60,40 @@
                         <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
 
                         <label for="nom">Nom :</label>
-                        <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                        <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
                         <br><br>
 
                         <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
                         <br><br>
 
                         <label for="courriel">Adresse mail : </label>
-                        <input type="email" name="adresse mail" id="mail" placeholder="Votre adresse mail">
+                        <input type="email" name="adresse mail" id="mail" placeholder="Votre adresse mail" required>
                         <br><br>
 
                         <label for="mdp">Veuillez entrer votre mot de passe : </label>
-                        <input type="text" name="mdp" id="mdp1" placeholder="Votre mot de passe">
+                        <input type="text" name="mdp" id="mdp1" placeholder="Votre mot de passe" required>
                         <br><br>
 
                         <label for="mdp">Veuillez confirmer votre mot de passe : </label>
-                        <input type="text" name="mdp confirm" id="mdp2" placeholder="Votre mot de passe">
+                        <input type="text" name="mdp confirm" id="mdp2" placeholder="Votre mot de passe" required>
                         <br><br>
+
+                        <input type="submit" name="Envoi" id="bouton" value="Inscription" required>
                     </fieldset>
                 </form>
                 <form class="connect">
                     <fieldset class="connection">
                         <legend>Se connecter :</legend>
                         <label for="identifiant">Identifiant :</label>
-                        <input type="text" name="id" id="identifiant" placeholder="Votre adresse mail">
+                        <input type="text" name="id" id="identifiant" placeholder="Votre adresse mail" required>
                         <br><br>
 
                         <label for="mdp3">Mot de passe :</label>
-                        <input type="text" name="mdp4" id="mdp5" placeholder="Votre mot de passe">
+                        <input type="text" name="mdp4" id="mdp5" placeholder="Votre mot de passe" required>
                         <br><br>
 
-
-                        <input type="submit" name="Envoi" id="bouton" value="Connection">
+                        <input type="submit" name="Envoi" id="bouton" value="Connexion">
 
                     </fieldset>
                 </form>
