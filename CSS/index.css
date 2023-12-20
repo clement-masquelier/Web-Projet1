@@ -135,43 +135,61 @@ nav > div {
 #accueil{
     width: 100%;
     display: grid;
-    grid-template-columns : repeat(3, 33%);
+    grid-template-columns : repeat(2, 50%);
     grid-template-rows: auto;
-    grid-template-areas: "c1 c2 c3"
+    grid-template-areas: "c1 c2"
 }
 
 .horairesHoverer{
     grid-area: c1;
-    margin: 50px;
-    height: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    height: 600px;
     border-radius: 25px;
 }
 .horaires {
     z-index: 1;
-    grid-area: c1;
     height: 100%;
     border-radius: 25px;
     background-color: #EDF5B9;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% auto;
-    grid-template-areas: "question"
-        "image";
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "haut"
+                         "bas";  
 }
+.front{
+    opacity: 100;
+}
+.rep{
+    grid-area: bas;
+}
+
 .horairesHoverer:hover .horaires{
-    animation-name: open1;
+    animation-name: opening;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     z-index: 2;
 }
-.horaires:hover ul {
-    animation-name: open1;
+.horairesHoverer:hover .front{
+    animation-name: openFront;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
-.question1 {
-    grid-area: question;
+.horairesHoverer:hover .back{
+    animation-name: openBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+#question1 {
+    grid-area: haut;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -181,72 +199,64 @@ nav > div {
 #horloge {
     height: 125px;
     width: 125px;
-    grid-area: image;
+    grid-area: bas;
     align-self: center;
     justify-self: center;
 }
-.horairesHoverer:hover .question1, .horairesHoverer:hover #horloge{
-    animation-name: open1front;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+
+.back{
+    color: #3C3B38;
+    opacity: 0;
 }
 
-.rep ul{
-    color:transparent;
+.soireeHoverer{
+    grid-area: c2;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left:10px;
+    margin-bottom: 50px;
+    height: 600px;
+    border-radius: 25px;
 }
-.horairesHoverer:hover ul{
-    animation-name: open1back;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    transform: rotate3d(0, 1, 0, 180deg);
-}
-
 .soiree {
     z-index: 1;
-    grid-area: c2;
-    height: 400px;
+    height: 100%;
+    width:100%;
     background-color: grey;
-    border-radius: 25px;
-    margin: 50px;
-    display: grid;
+    border-radius: 25px;display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% auto;
-    grid-template-areas: "questionUn"
-                         "imageUn";
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "haut"
+                         "bas";
+    
 }
-.test {
-    z-index: 1;
-    grid-area: c3;
-    height: 400px;
-    background-color: rgb(121, 156, 231);
-    border-radius: 25px;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% auto;
-    grid-template-areas: "questionUn"
-                         "imageUn";
-}
-.test:hover{
-    background-color: rgb(121, 156, 231);
-    animation-name: open3;
+
+.soireeHoverer:hover .soiree{
+    animation-name: opening;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    z-index: 2;
-    justify-self: right;
-}
-.soiree:hover {
-    background-color: green;
-    animation-name: open2;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-timing-function: linear;
     z-index:2;
     justify-self: center;
 }
-.question2{
-    grid-area: questionUn;
+
+.soireeHoverer:hover .front{
+    animation-name: openFront;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+.soireeHoverer:hover .back{
+    animation-name: openBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+#question2{
+    grid-area: haut;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -255,12 +265,12 @@ nav > div {
 }
 #fete{
     transform: scale(0.2,0.2);
-    grid-area: imageUn;
+    grid-area: bas;
     align-self: center;
     justify-self: center;
 }
 
-@keyframes open1front{
+@keyframes openFront{
     from{
         opacity: 100;
     }
@@ -276,22 +286,22 @@ nav > div {
 
 }
 
-@keyframes open1back{
+@keyframes openBack{
     from{
-        color: transparent;
+        opacity: 0;
     }
     50%{
-        color: transparent;
+        opacity: 0;
     }
     51%{
-        color: #3C3B38;
+        opacity: 100;
     }
     to{
-        color: #3C3B38;
+        opacity: 100;
     }
 }
 
-@keyframes open1 {
+@keyframes opening {
     from{
         transform: rotate3d(0, 1, 0, 0deg);
     }
@@ -300,23 +310,7 @@ nav > div {
     }
 }
 
-@keyframes open2{
-    from{
-        width: 70%;
-    }
-    to{
-        width:250%;
-    }
-}
 
-@keyframes open3{
-    from{
-        width: 70%;
-    }
-    to{
-        width:250%;
-    }
-}
 
 
 #reseaux img {
