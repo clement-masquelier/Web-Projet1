@@ -132,6 +132,10 @@ nav > div {
 }
 /* Barre de navigation  */
 
+body{
+    background-color: #E7E7E7;
+}
+
 #loc{
     width: 40%;
     height: 400px;
