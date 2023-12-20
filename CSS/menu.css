@@ -132,6 +132,9 @@ nav > div {
 }
 /* Barre de navigation  */
 
+body{
+    background-color: #E7E7E7;
+}
 
 #menu_box{
     position: relative;

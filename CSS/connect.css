@@ -132,31 +132,13 @@ nav > div {
 }
 /* Barre de navigation  */
 
+body {
+    background-color: #E7E7E7;
+}
+
 #bulles {
-    background-color: aliceblue;
     font-family: 'Noto Sans';
     color: #3C3B38;
-}
-main {
-    background-color: aliceblue;
-    animation: changeColor 10s infinite;
-}
-@keyframes changeColor {
-    0% {
-        color: #3C3B38;
-    }
-    25% {
-        color: #c99614;
-    }
-    50% {
-        color: #3C3B38;
-    }
-    75% {
-        color: #c99614;
-    }
-    100% {
-        color: #3C3B38;
-    }
 }
 
 .portrait {
