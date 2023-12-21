@@ -221,6 +221,7 @@ body{
     justify-self: right;
     margin: 10px;
     align-self: flex-end;
+    color: #EDF5B9;
 }
 
 #submit:active {
@@ -237,6 +238,53 @@ body{
     margin: 5px;
     align-self: flex-end;
     font-size: 13px;
+}
+
+input[type=text]{
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: #EDF5B9;
+}
+input:focus[type=text]{
+    outline: none;
+    background-color: #E7E7E7;
+}
+input[type=tel]{
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: #EDF5B9;
+}
+input:focus[type=tel]{
+    outline: none;
+    background-color: #E7E7E7;
+}
+input[type=datetime-local]{
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: #EDF5B9;
+}
+input:focus[type=datetime-local]{
+    outline:none;
+    background-color: #E7E7E7;
+}
+select{
+    appearance: none;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: #EDF5B9;
+}
+select:focus{
+    outline: none;
+    background-color: #E7E7E7;
+}
+textarea{
+    border:none;
+    background-color: #e7e7e78a;
+}
+textarea:focus{
+    outline: none;
+    background-color: white;
+
 }
 /* Formulaire */
 
