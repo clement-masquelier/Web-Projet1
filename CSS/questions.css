@@ -160,12 +160,15 @@ h2{
     animation-name: hoveringOutQuestion;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    margin: 15px;
 }
 .question{
     font-weight: bold;
+    margin: 10px;
 }
 #quest1 {
     grid-area: q1;
+    
 }
 #quest1:hover > .reponse{
     animation-name: hoveringQuestion;

@@ -45,49 +45,45 @@
     </header>
 
     <form id="reserve">
-        <div class="fLine">
-            
-            <div id="nameC">
-                <label for="name">Nom* : </label>
-                <input type="text" id="name" name="user_name" required/>
-            </div>
-            
-            <div id="phoneNumberC">
-                <label for="phoneNumber">N° de téléphone* :</label>
-                <input type="tel" id="phoneNumber" name="user_phone_number" required/>
-            </div>
         
+        <div id="nameC" class="champ">
+            <label for="name">Nom* : </label>
+            <input type="text" id="name" name="user_name" required/>
         </div>
         
-        <div class="sLine">
-            
-            <div id="dateC">
-                <label for="date">Date et heure* : </label>
-                <input type="datetime-local" id="date" value="2023-12-11" min="2023-12-11" max="2024-12-31" name="reservation_date" required />
-            </div>
-
-            <div id="nbPersonnesC">
-                <label for="nbPersonnes">Nombres de personnes* :</label>
-                <select id="nbpersonnes" name="nbPersonnes" required>
-                    <option value="" selected>--Choisissez le nombre de personnes --</option>
-                    <option value="option1">1</option>
-                    <option value="option2">2</option>
-                    <option value="option3">3</option>
-                    <option value="option4">4</option>
-                    <option value="option5">5</option>
-                    <option value="option6">6</option>
-                    <option value="option7">7</option>
-                    <option value="option8">8</option>
-                    <option value="option9">9</option>
-                    <option value="option10">10</option>
-                    <option value="option11">Plus de 10 (préciser dans 'demandes particulières')</option>
-                </select>
-            </div>
-
-
+        <div id="phoneNumberC" class="champ">
+            <label for="phoneNumber">N° de téléphone* :</label>
+            <input type="tel" id="phoneNumber" name="user_phone_number" required/>
+        </div>
+    
+    
+        
+        <div id="dateC" class="champ">
+            <label for="date">Date et heure* : </label>
+            <input type="datetime-local" id="date" value="2023-12-11" min="2023-12-11" max="2024-12-31" name="reservation_date" required />
         </div>
 
-        <div class="lLine">
+        <div id="nbPersonnesC" class="champ">
+            <label for="nbPersonnes">Nombres de personnes* :</label>
+            <select id="nbpersonnes" name="nbPersonnes" required>
+                <option value="" selected>--Choisissez le nombre de personnes --</option>
+                <option value="option1">1</option>
+                <option value="option2">2</option>
+                <option value="option3">3</option>
+                <option value="option4">4</option>
+                <option value="option5">5</option>
+                <option value="option6">6</option>
+                <option value="option7">7</option>
+                <option value="option8">8</option>
+                <option value="option9">9</option>
+                <option value="option10">10</option>
+                <option value="option11">Plus de 10 (préciser dans 'demandes particulières')</option>
+            </select>
+        </div>
+
+
+
+        <div id="lLine" class="champ">
             <label for="asks">Demandes particulières :</label>
             <textarea id="asks" rows="4" cols="40" name="asks"></textarea>
         </div>
