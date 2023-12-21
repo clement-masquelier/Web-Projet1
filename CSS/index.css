@@ -148,19 +148,19 @@ body{
     grid-area: c1;
     margin-top: 50px;
     margin-left: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 50px;
     height: 600px;
+    width: 70%;
     border-radius: 25px;
 }
 .horaires {
-    z-index: 1;
     height: 100%;
     border-radius: 25px;
     background-color: #EDF5B9;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 40% 60%;
     grid-template-areas: "haut"
                          "bas";  
 }
@@ -194,15 +194,16 @@ body{
 
 #question1 {
     grid-area: haut;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
+    align-self:center;
     margin: 18px;
     color: #3C3B38;
 }
 #horloge {
-    height: 125px;
-    width: 125px;
+    height: 200px;
+    width: 200px;
     grid-area: bas;
     align-self: center;
     justify-self: center;
@@ -217,13 +218,13 @@ body{
     grid-area: c2;
     margin-top: 50px;
     margin-right: 50px;
-    margin-left:10px;
     margin-bottom: 50px;
     height: 600px;
+    width: 70%;
     border-radius: 25px;
+    justify-content: center;
 }
 .soiree {
-    z-index: 1;
     height: 100%;
     width:100%;
     background-color: grey;
