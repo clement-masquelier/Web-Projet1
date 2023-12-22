@@ -139,9 +139,10 @@ body{
 #accueil{
     width: 100%;
     display: grid;
-    grid-template-columns : repeat(2, 50%);
-    grid-template-rows: auto;
-    grid-template-areas: "c1 c2"
+    grid-template-columns : 100%;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "c1"
+                        "c2";
 }
 
 .horairesHoverer{
@@ -369,6 +370,18 @@ float: left;
 }
 
 /* Footer */
+
+/* Tablette */
+@media only screen and (600px<=width){
+    #accueil{
+        grid-template-columns : repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-template-areas: "c1 c2";
+    }
+
+}
+
+/* Tablette */
 
 
 /* Ordinateur */
