@@ -197,7 +197,6 @@ body{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    align-self: center;
     margin: 10px;
     color: #CA361B;
 }
@@ -263,7 +262,7 @@ body{
 
 #question2 {
     grid-area: haut;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin: 10px;
@@ -317,7 +316,13 @@ body{
 }
 
 
-
+.numero {
+    color: #3C3B38;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Noto Sans';
+}
 
 #reseaux img {
 width: 50px;
