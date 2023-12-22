@@ -194,7 +194,7 @@ body{
 
 #question1 {
     grid-area: haut;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     margin: 10px;
@@ -213,6 +213,10 @@ body{
     opacity: 0;
     font-size: 25px;
     text-align: center;
+}
+
+#carte2 {
+    color: #E7E7E7;
 }
 
 .soireeHoverer{
@@ -263,14 +267,14 @@ body{
 
 #question2 {
     grid-area: haut;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     margin: 10px;
     color: #EDF5B9;
 }
 #fete{
-    transform: scale(0.2,0.2);
+    transform: scale(0.3,0.3);
     grid-area: bas;
     align-self: center;
     justify-self: center;
