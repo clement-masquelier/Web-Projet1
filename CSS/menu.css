@@ -344,6 +344,10 @@ li{
     }
     /* Grid menu */
 
+    #boissons_extras ul{
+        line-height: 2.5;
+    }
+
     #menu_box{
         position: relative;
         width: 100%;
