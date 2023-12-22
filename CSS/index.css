@@ -160,7 +160,7 @@ body{
     background-color: #EDF5B9;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: "haut"
                          "bas";  
 }
@@ -197,9 +197,9 @@ body{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    align-self:center;
-    margin: 18px;
-    color: #3C3B38;
+    align-self: center;
+    margin: 10px;
+    color: #CA361B;
 }
 #horloge {
     height: 200px;
@@ -212,6 +212,7 @@ body{
 .back{
     color: #3C3B38;
     opacity: 0;
+    font-size: 25px;
 }
 
 .soireeHoverer{
@@ -226,14 +227,14 @@ body{
 }
 .soiree {
     height: 100%;
-    width:100%;
-    background-color: grey;
-    border-radius: 25px;display: grid;
+    width: 100%;
+    background-color: #CA361B;
+    border-radius: 25px;
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 80%;
     grid-template-areas: "haut"
-                         "bas";
-    
+        "bas";
 }
 
 .soireeHoverer:hover .soiree{
@@ -260,13 +261,13 @@ body{
     transform: rotate3d(0, 1, 0, -180deg);
 }
 
-#question2{
+#question2 {
     grid-area: haut;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin: 18px;
-    color: #3C3B38;
+    margin: 10px;
+    color: #EDF5B9;
 }
 #fete{
     transform: scale(0.2,0.2);
