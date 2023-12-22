@@ -146,9 +146,8 @@ body{
 
 .horairesHoverer{
     grid-area: c1;
+    margin: auto;
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 20px;
     margin-bottom: 50px;
     height: 600px;
     width: 70%;
@@ -221,13 +220,12 @@ body{
 
 .soireeHoverer{
     grid-area: c2;
+    margin: auto;
     margin-top: 50px;
-    margin-right: 50px;
     margin-bottom: 50px;
     height: 600px;
     width: 70%;
     border-radius: 25px;
-    justify-content: center;
 }
 .soiree {
     height: 100%;
@@ -373,7 +371,7 @@ float: left;
 /* Footer */
 
 
-/* Ordnateur */
+/* Ordinateur */
 @media only screen and (768px<=width){
     
     /* Barre de navigation */
