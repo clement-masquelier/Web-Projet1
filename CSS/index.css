@@ -316,13 +316,7 @@ body{
 }
 
 
-.numero {
-    color: #3C3B38;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Noto Sans';
-}
+/* Footer */
 
 #reseaux img {
 width: 50px;
@@ -365,6 +359,9 @@ float: left;
 .instagram:hover {
     transform: scale(1.5,1.5);
 }
+
+/* Footer */
+
 
 /* Ordnateur */
 @media only screen and (768px<=width){

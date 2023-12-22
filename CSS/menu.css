@@ -139,10 +139,11 @@ body{
 #menu_box{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 1750px;
 }
 #menu_box > h1{
     text-align: center;
+    align-self: center;
     font-size: 30px;
     font-weight: bold;
 }
@@ -240,7 +241,7 @@ li{
                             "sauces sauces sauces"
                             "boissons boissons boissons";
     width: 90%;
-    top: 15%;
+    top: 50px;
     left: 5%;
 }
 
@@ -248,15 +249,69 @@ li{
     box-shadow: 0px 0px 10px 0px black; 
 }
 
+/* Footer */
+
+#reseaux img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    float: left;
+    }
+    
+    #reseaux {
+        margin: 2%;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: grid;
+        background-color:#ffbc0d ;
+        justify-items: center;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 50px;
+        grid-template-areas: "Facebook Twitter Instagram"
+    }
+    
+    .facebook {
+        grid-area: Facebook;
+    }
+    .facebook:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    
+    .twitter {
+        grid-area: Twitter;
+    }
+    .twitter:hover {
+        transform: scale(1.5,1.5); 
+    }
+    
+    .instagram {
+        grid-area: Instagram;
+    }
+    .instagram:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    /* Footer */
+
+
 /* Tablette */
 @media only screen and (600px<=width){
     
-    
-    
+    #menu_box{
+        position: relative;
+        width: 100%;
+        height: 700px;
+    }
+    #boissons_extras ul{
+        line-height: 1.3;
+    }
     #sauces_garnitures .droite{
         border-left: solid black 1px;
     }
     #menu_box #mConteneur {
+        grid-template-rows: 30% 30% 40%;
         grid-template-areas: "pates sauces sauces"
                                 "pates sauces sauces"
                                 "boissons boissons boissons";
@@ -288,6 +343,13 @@ li{
                                 "pates sauces boissons";
     }
     /* Grid menu */
+
+    #menu_box{
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+
 
 }
 /* Ordinateur */

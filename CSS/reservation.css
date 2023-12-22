@@ -246,8 +246,9 @@ input[type=text]{
     background-color: #EDF5B9;
 }
 input:focus[type=text]{
-    outline: none;
-    background-color: #E7E7E7;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: white;
 }
 input[type=tel]{
     border: none;
@@ -255,8 +256,9 @@ input[type=tel]{
     background-color: #EDF5B9;
 }
 input:focus[type=tel]{
-    outline: none;
-    background-color: #E7E7E7;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: white;
 }
 input[type=datetime-local]{
     border: none;
@@ -264,8 +266,9 @@ input[type=datetime-local]{
     background-color: #EDF5B9;
 }
 input:focus[type=datetime-local]{
-    outline:none;
-    background-color: #E7E7E7;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: white;
 }
 select{
     appearance: none;
@@ -274,20 +277,67 @@ select{
     background-color: #EDF5B9;
 }
 select:focus{
-    outline: none;
-    background-color: #E7E7E7;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
+    background-color: white;
 }
 textarea{
-    border:none;
-    background-color: #e7e7e78a;
+    background-color: white;
 }
 textarea:focus{
-    outline: none;
+    border: none;
+    border-bottom: solid 1px #3C3B38;
     background-color: white;
 
 }
 /* Formulaire */
 
+
+/* Footer */
+
+#reseaux img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    float: left;
+    }
+    
+    #reseaux {
+        margin: 2%;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: grid;
+        background-color:#ffbc0d ;
+        justify-items: center;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 50px;
+        grid-template-areas: "Facebook Twitter Instagram"
+    }
+    
+    .facebook {
+        grid-area: Facebook;
+    }
+    .facebook:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    
+    .twitter {
+        grid-area: Twitter;
+    }
+    .twitter:hover {
+        transform: scale(1.5,1.5); 
+    }
+    
+    .instagram {
+        grid-area: Instagram;
+    }
+    .instagram:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    /* Footer */
 
 /* Ordnateur */
 @media only screen and (768px<=width){
