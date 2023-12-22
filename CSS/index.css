@@ -317,7 +317,7 @@ body{
 }
 
 
-
+/* Footer */
 
 #reseaux img {
 width: 50px;
@@ -360,6 +360,9 @@ float: left;
 .instagram:hover {
     transform: scale(1.5,1.5);
 }
+
+/* Footer */
+
 
 /* Ordnateur */
 @media only screen and (768px<=width){

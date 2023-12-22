@@ -293,6 +293,52 @@ textarea:focus{
 /* Formulaire */
 
 
+/* Footer */
+
+#reseaux img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    float: left;
+    }
+    
+    #reseaux {
+        margin: 2%;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: grid;
+        background-color:#ffbc0d ;
+        justify-items: center;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 50px;
+        grid-template-areas: "Facebook Twitter Instagram"
+    }
+    
+    .facebook {
+        grid-area: Facebook;
+    }
+    .facebook:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    
+    .twitter {
+        grid-area: Twitter;
+    }
+    .twitter:hover {
+        transform: scale(1.5,1.5); 
+    }
+    
+    .instagram {
+        grid-area: Instagram;
+    }
+    .instagram:hover {
+        transform: scale(1.5,1.5);
+    }
+    
+    /* Footer */
+
 /* Ordnateur */
 @media only screen and (768px<=width){
     
