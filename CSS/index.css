@@ -213,6 +213,7 @@ body{
     opacity: 0;
     font-size: 25px;
     text-align: center;
+    font-weight: bold;
 }
 
 #carte2 {
@@ -320,7 +321,7 @@ body{
 }
 
 .numero{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
